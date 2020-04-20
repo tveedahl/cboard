@@ -4,12 +4,20 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
+/* JSX functions go here */
+function Header() {
+  return (
+    <div id="header">
+      <div id="logo"><img alt="" src={require('./images/logo_v2.gif')} /></div>
+    </div>
+  );
+}
+
+/* JSX variable declarations go here */
+
 ReactDOM.render(
-  /*<React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')*/
-  <h1>Hello, world!</h1>,
+  <Header />,
   document.getElementById('root')
 );
 
